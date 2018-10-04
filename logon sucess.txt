@@ -1,0 +1,85 @@
+<!-- logon request -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+      <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+      <soap:Header/>
+      <soap:Body>
+    <tem:Logon>
+              <tem:strBookingRef>A03654</tem:strBookingRef>
+              <tem:strLastName>MIL</tem:strLastName>
+            </tem:Logon>
+      </soap:Body>
+      </soap:Envelope>
+
+
+<!-- logon response -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <soap:Body>
+  <LogonResponse xmlns="http://tempuri.org/">
+   <LogonResult>
+    <APIFlightSegments>
+     <APIFlightSegment>
+      <booking_segment_id>e5605094-596c-4550-ab83-7371b820a6c2</booking_segment_id>
+      <flight_id>81a8ec2a-2821-47e8-8562-f037b9cdac24</flight_id>
+      <flight_connection_id />
+      <airline_rcd>B0</airline_rcd>
+      <flight_number>101</flight_number>
+      <departure_date>2018-06-26T00:00:00+00:00</departure_date>
+      <departure_time>1910</departure_time>
+      <booking_class_rcd>V</booking_class_rcd>
+      <boarding_class_rcd>C</boarding_class_rcd>
+      <segment_status_rcd>HK</segment_status_rcd>
+      <booking_id>99c916b5-0acc-4d03-9ec9-32d263587370</booking_id>
+      <number_of_units>2</number_of_units>
+      <journey_time>-975</journey_time>
+      <arrival_time>855</arrival_time>
+      <arrival_date>2018-06-27T00:00:00+00:00</arrival_date>
+      <origin_rcd>EWR</origin_rcd>
+      <destination_rcd>ORY</destination_rcd>
+      <segment_change_status_rcd>TK</segment_change_status_rcd>
+      <info_segment_flag>0</info_segment_flag>
+      <high_priority_waitlist_flag>0</high_priority_waitlist_flag>
+      <od_origin_rcd>EWR</od_origin_rcd>
+      <flight_check_in_status_rcd>OPEN</flight_check_in_status_rcd>
+      <od_destination_rcd>ORY</od_destination_rcd>
+      <origin_name>New York Newark</origin_name>
+      <destination_name>Paris Orly</destination_name>
+      <segment_status_name>Confirmed</segment_status_name>
+      <seatmap_flag>1</seatmap_flag>
+      <allow_web_checkin_flag>1</allow_web_checkin_flag>
+      <transit_points />
+      <transit_points_name />
+      <currency_rcd>EUR</currency_rcd>
+      <excess_baggage_charge_amount>250.00</excess_baggage_charge_amount>
+      <nautical_miles>0</nautical_miles>
+      <flight_information_1 />
+      <flight_information_2 />
+      <flight_information_3 />
+      <min_transit_minutes>0</min_transit_minutes>
+      <max_transit_minutes>0</max_transit_minutes>
+      <close_web_check_in />
+      <paper_ticket_warning_flag>0</paper_ticket_warning_flag>
+      <require_ticket_number_flag>0</require_ticket_number_flag>
+      <require_passenger_title_flag>0</require_passenger_title_flag>
+      <require_passenger_gender_flag>0</require_passenger_gender_flag>
+      <require_date_of_birth_flag>0</require_date_of_birth_flag>
+      <require_document_details_flag>0</require_document_details_flag>
+      <require_passenger_weight_flag>0</require_passenger_weight_flag>
+      <require_open_status_flag>0</require_open_status_flag>
+      <show_redress_number_flag>0</show_redress_number_flag>
+     </APIFlightSegment>
+    </APIFlightSegments>
+    <APIPassengerFees />
+    <APIErrors>
+     <APIError>
+      <code>000</code>
+      <message>Successful transaction request</message>
+      <serverId>Ser1</serverId>
+     </APIError>
+    </APIErrors>
+   </LogonResult>
+  </LogonResponse>
+ </soap:Body>
+</soap:Envelope>
